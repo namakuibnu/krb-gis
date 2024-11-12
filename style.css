@@ -1,0 +1,204 @@
+/* Import font Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Style dasar */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Color Scheme */
+:root {
+  --warna-utama: #2980b9;
+  --warna-gradasi: #6dd5fa;
+  --warna-latar: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #2980b9, #6dd5fa);
+}
+
+.navbar .nav-link {
+  color: #ffffff;
+  position: relative;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  background-color: #2980b9;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px 80px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lead {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.hero-section footer {
+  margin-top: 30px;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--warna-utama);
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--warna-gradasi);
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.bg-light {
+  background-color: #e6f7ff;
+}
+
+.bg-info {
+  background: linear-gradient(135deg, var(--warna-utama), var(--warna-gradasi));
+  color: #ffffff;
+}
+
+.bg-dark {
+  background-color: var(--warna-utama);
+  color: #ffffff;
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    #2980b9,
+    #6dd5fa
+  ); /* Gradasi yang sama dengan header */
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.button-primary {
+  background-color: var(--warna-utama);
+  color: #ff0000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--warna-gradasi);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Styling untuk section Profil Desa */
+#profile {
+  padding: 40px 0;
+}
+
+#profile .section-title {
+  font-size: 2rem;
+  color: var(--warna-utama);
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+#profile .section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--warna-gradasi);
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.text-regular {
+  font-size: 1rem; /* Tentukan ukuran yang diinginkan */
+  line-height: 1.6;
+  color: #000000; /* Pastikan warna teks tetap sesuai skema warna */
+}
+.text-regular2 {
+  font-size: 1rem; /* Tentukan ukuran yang diinginkan */
+  line-height: 1.6;
+  color: #ffffff; /* Pastikan warna teks tetap sesuai skema warna */
+}
+.logo-img {
+  height: 40px; /* Atur tinggi logo sesuai kebutuhan */
+  margin-right: 8px; /* Beri sedikit jarak antara logo dan teks */
+  vertical-align: middle; /* Sejajarkan dengan teks */
+}
